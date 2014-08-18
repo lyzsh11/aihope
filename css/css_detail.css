@@ -33,3 +33,17 @@
 	float:left;
 	margin-top:20px;
 }
+
+.text_content_big {
+	font-size: 16px;
+	color: #989898;
+	float: left;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.link {
+	font-size: 16px;
+	color: #4C685C;
+	font-weight: bold;	
+}
