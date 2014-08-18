@@ -18,11 +18,11 @@
         <div class="text_content_big">
         	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们——爱心帮，是一个做公益项目的企业。爱心帮教的目的是通过网友给教师提供保障金的方法，来鼓励和支持教师为乡村孩子、农民工子弟和教育欠发达区域的少年儿童提供优质的教学。您可以定向捐赠某位感动您的老师，也可以选择自动分配老师（爱心帮将根据大家奖赠的情况去尽量合理地分配给每位申请的老师）。爱心帮不会抽取或扣留一分钱，但此款项的到账可能比直接定向捐给老师略有延迟。<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所有账目出入均可查询。<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="http://cmbchina.com/">招商银行</a><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一卡通卡号: 6214 8501 0331 8306<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户地: 北京 
-<a class="link" href="https://pbnj.ebank.cmbchina.com/CmbBank_GenShell/UI/GenShellPC/Login/Login.aspx">网上银行大众版</a><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查询密码: 140812
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="http://cmbchina.com/">招商银行</a>
+一卡通卡号: 6214 8501 0331 8306<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="https://pbnj.ebank.cmbchina.com/CmbBank_GenShell/UI/GenShellPC/Login/Login.aspx">网上银行大众版</a>
+查询密码: 140812<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户地: 北京<br>
 
         </div>
     </div>

@@ -45,5 +45,6 @@ setcookie("userid", $id, time()+3600*72);
 //可跳转到个人中心  
 mysql_close($db_con);
 
-require("ucenter.php");
+//require("ucenter.php");
+require("jump.php");
 ?>

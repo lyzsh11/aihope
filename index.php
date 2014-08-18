@@ -34,7 +34,7 @@
 				require_once ($path."db.php") ; 
 				$db_con = @mysql_connect($dbhost, $dbuser, $dbpasswd) or $my_err = true;
 				@mysql_select_db($dbname);
-				//$sql="insert into teacher (name,create_time) values (\"测试3\",CURTIME())";
+				//$sql="insert into teacher (name,create_time) values (\"测试3\",NOW())";
 				$sql="select * from teacher";
 				$dbres = mysql_query($sql, $db_con);
 				$active=" active";
@@ -64,10 +64,9 @@
         
     	</div>
     	<div class="right">
-    		<div class="text_head">微信那些事</div>
+    		<div class="text_head">爱心帮公益订阅号 微信消息</div>
 			<img src="image/bar.png"/>
-            <a href="#" class="tag">社会</a>
-            <a href="#" class="tag">教育</a>
+			<iframe src="wx.php" scrolling="auto" height="100%" width="100%" frameborder="0"></iframe>
     	</div>
     	<div class="middle_bottom">
         	<div class="text_head">那些身边的人和事</div>

@@ -1,8 +1,6 @@
 <?php
 setcookie("userid","", time()-3600*24);
+require("jump.php");
 ?>
-<script>
-	window.location="login.php";
-</script>
 
 

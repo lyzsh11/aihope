@@ -35,5 +35,6 @@ if (!$dbres) {
 setcookie("user",$_POST["id"], 3600*72);
 echo "创建用户成功，已登录!";
 //可跳转到个人中心  
+require("jump.php");
 mysql_close($db_con);
 ?>
