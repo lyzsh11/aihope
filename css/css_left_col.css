@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.box_out {
+	width: 250px;
+}
+
+.text_head {
+	color: #000000;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: bold;
+}
