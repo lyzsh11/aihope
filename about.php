@@ -24,6 +24,9 @@
 查询密码: 140812<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户地: 北京<br>
 
+	<br><br>
+	联系我们：<a href="mailto:service@aihope.org">service@aihope.org</a><br>
+	或者扫描二维码加入微信粉丝群。我们期待您的每一条建议！
         </div>
     </div>
 </div>

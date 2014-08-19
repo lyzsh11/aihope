@@ -38,6 +38,9 @@
 					echo "<div class=\"box_news\">\n";
         				echo '<div class="text_head_small">';
 					echo '<a href="'.$teacher['url'].'">'.$teacher['name'].'老师</a>';
+					if ($teacher['recommender'] != 'admin') {
+						echo "(网友".$teacher['recommender']."推荐)";
+					}
               				echo '<a href="'.$teacher['shopurl'].'"><div class="button_given" style="float:right; margin-top:-6px">我来帮TA</div></a>';
 					echo "</div>\n";
         				echo '<a href="'.$teacher['url'].'"><img src="'.$teacher['pic'].'" height="100px" width="100px" style="margin-top:20px; float:left"/></a> <a href="'.$teacher['url'].'"><div class="text_content">'.$teacher['info'].'</div></a>';

@@ -35,7 +35,7 @@
 				$db_con = @mysql_connect($dbhost, $dbuser, $dbpasswd) or $my_err = true;
 				@mysql_select_db($dbname);
 				//$sql="insert into teacher (name,create_time) values (\"测试3\",NOW())";
-				$sql="select * from teacher";
+				$sql="select * from teacher where recommender='admin'";
 				$dbres = mysql_query($sql, $db_con);
 				$active=" active";
 				while($teacher = (mysql_fetch_array($dbres))) {

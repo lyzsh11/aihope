@@ -18,8 +18,10 @@ if(!isset($_COOKIE['userid'])) {
 	//$sql="select * from teacher where url like \"%$dir\"";
 	//$dbres = mysql_query($sql, $db_con);
 	//TODO:判断重复,考察覆盖数据的权限  
-	$sql="insert into teacher (name,create_time,pic,info,position,url,shopurl) values (\"".$_POST["teacher_name"]."\",NOW(),'"
-	.$_POST["pic"]
+	$sql="insert into teacher (name,recommender,create_time,pic,info,position,url,shopurl) values (\"".$_POST["teacher_name"]."\",\""
+	.$_COOKIE['userid']
+	."\", NOW(),'"
+	.$_POST["piclink"]
 	."', '"
 	.$_POST["summary"]
 	."', '"
