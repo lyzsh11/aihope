@@ -5,6 +5,7 @@ if(!isset($_COOKIE['userid'])) {
 } else {
 	//TODO: 检查用户的权限  
 
+	$defaultpic = "http://www.aihope.org/web/wcx/teaching1.jpg";
 	if(isset($_POST["fileupload"])) {
 	    //print_r($_FILES);
 	    $uploaddir = '/usr/share/nginx/html/v1/'.$_POST["path"];
@@ -16,7 +17,8 @@ if(!isset($_COOKIE['userid'])) {
 	    //echo '<pre>';
 	    date_default_timezone_set('Asia/Chongqing');
 	    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-		echo "上传成功，可在 <a href=\"http://www.aihope.org/web/".$_POST["path"]."/$filename\">这里</a>访问<br>\n";
+		$defaultpic = "http://www.aihope.org/web/".$_POST["path"]."/".$filename;
+		echo "上传成功，可在 <a href=\"$defaultpic\">这里</a>访问<br>\n";
 	    } else {
 		print_r(error_get_last());
 		echo $_FILES['userfile']['tmp_name']."=>$uploadfile 文件上传失败\n";
@@ -40,9 +42,9 @@ if(!isset($_COOKIE['userid'])) {
 	<form action="deal_add.php" method=POST>
 	<table>
 	<tr><td align=right>老师名:</td><td><input type=text size=20 name=teacher_name /> </td></tr>
-	<tr><td align=right>网站url目录名(如wcx):</td><td><input type=text size=20 name=path /></td></tr>
+	<tr><td align=right>网站url目录名(如wcx):</td><td><input type=text size=20 name=path value="<?php echo $_POST["path"] ?>" /></td></tr>
 	<tr><td align=right>捐赠链接:</td><td><input type=text size=100 name=shopurl value="http://wd.koudai.com/?userid=208388189" /> </td></tr>
-	<tr><td align=right>图片链接:</td><td><input type=text size=100 name=piclink value="http://www.aihope.org/web/wcx/teaching1.jpg" /> </td></tr>
+	<tr><td align=right>图片链接:</td><td><input type=text size=100 name=piclink value="<?php echo $defaultpic ?>" /> </td></tr>
 	<tr><td align=right>执教地点:</td><td><input type=text size=100 name=position /> </td></tr>
 	<tr><td align=right>事迹摘要:</td><td><input type=text size=100 name=summary /> </td></tr>
 	<tr><td align=right>事迹链接:</td><td><input type=text size=100 name=link /> </td></tr>

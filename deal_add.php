@@ -50,6 +50,7 @@ if(!isset($_COOKIE['userid'])) {
 			fwrite($handle, "<h2>".$_POST["teacher_name"]."老师介绍</h2>");
 			fwrite($handle, "<p>".$_COOKIE['userid']."推荐</p>");
 			fwrite($handle, "<p>".$_POST["position"]."</p>");
+			fwrite($handle, "<p><a href='".$_POST["shopurl"]."'>我要帮TA</a></p>");
 			fwrite($handle, "<img src=\"".$_POST["piclink"]."\" />");
 			fwrite($handle, "<p>\n".str_replace("\n","<br>\n",$content)."\n</p>\n");
 		}
