@@ -46,7 +46,6 @@
 	padding: 15px;
 	border-radius: 4px;
 	height: 155px;
-	overflow:hidden;
 }
 
 .text_head_small {
@@ -70,12 +69,9 @@
 .text_content {
 	font-size: 12px;
 	color: #989898;
-	float: left;
-	margin-top:20px;
-	margin-left:20px;
-	width:840px;
-	overflow:hidden;
-	word-wrap:break-word;
+	margin-top: 24px;
+	margin-left: 20px;
+	float:left;
 }
 
 .button_given {
