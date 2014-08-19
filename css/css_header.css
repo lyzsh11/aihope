@@ -55,4 +55,13 @@
 	text-align: center;
 	color: #FFFFFF;
 }
+
+.text_link {
+	color: #224E25;	
+	font-size: 13px;
+}
+
+.text_without_link {
+	color:#909090;
+	font-size: 13px;
 }

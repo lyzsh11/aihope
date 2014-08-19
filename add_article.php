@@ -28,22 +28,34 @@ if(!isset($_COOKIE['userid'])) {
 	}
 ?>
 	<html>
-	<body>
-	<form action="" method=POST>
-	<table>
-	<tr><td align=right>文章标题:</td><td><input type=text size=20 name=title /> </td></tr>
+    <head>
+    	<link href="css/css_table.css" rel="stylesheet" type="text/css"/>
+    </head>
+	<body style="margin:0 0">
+    <iframe src="header.html" scrolling="no" height="150px" width="100%" frameborder="0"></iframe>
+	<form class="box_out" action="" method=POST>
+	<div class="box_in">
+    	<div class="left_tag">文章标题：</div>
+        <input class="right_input" type=text size=20 name=title />
+    </div>
 	<!--tr><td align=right>文章英文网址:</td><td><input type=text size=20 name=path value="article1"/></td></tr-->
-	<tr><td align=right>文章分类:</td><td><select name=articletype>
-		<option name=articletype value=1>教育</option>
-		<option name=articletype value=2>社会</option>
-	</select>
-</td></tr>
-	<tr><td align=right>图片链接:</td><td><input type=text size=100 name=piclink value="http://www.aihope.org/web/pic/heart.jpg" /> </td></tr>
-	<tr><td align=right>微信链接:</td><td><input type=text size=100 name=link /> </td></tr>
-	<tr><td align=right>
-		<input type=submit name=addarticle />
-	</td><td></td></tr>
-	</table>
+	<div class="box_in">
+    	<div class="left_tag">文章分类:</div>
+        <select name=articletype>
+			<option name=articletype value=1>教育</option>
+			<option name=articletype value=2>社会</option>
+		</select>
+    </div>
+    <div class="box_in">
+    	<div class="left_tag">图片链接：</div>
+        <input class="right_input" type=text size=100 name=piclink value="http://www.aihope.org/web/pic/heart.jpg" />
+    </div>
+    <div class="box_in">
+    	<div class="left_tag">微信链接：</div>
+        <input class="right_input" type=text size=100 name=link />
+    </div>
+	<input class="button" style="margin-left:20px" type=submit name=addarticle />
+	</form>
 	</body>
 	</html>
 <?php

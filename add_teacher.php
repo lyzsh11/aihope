@@ -32,28 +32,61 @@ if(!isset($_COOKIE['userid'])) {
 	}
 ?>
 	<html>
-	<body>
-	<form enctype="multipart/form-data" action="" method=POST>
-	上传图片资源：<input name="userfile" type="file" /><br>
-	需上传到的目录名(如写wcx)：<input type=text size=20 name=path value="<?php echo $_POST["path"] ?>" /><br>
-    	<input type="submit" name="fileupload" value="上传" />
+    <head>
+    	<link href="css/css_table.css" rel="stylesheet" type="text/css"/>
+    </head>
+	<body style="margin:0 0">
+    <iframe src="header.html" scrolling="no" height="130px" width="100%" frameborder="0"></iframe>
+	<form class="box_out" enctype="multipart/form-data" action="" method=POST>
+    <div class="box_in">
+		<div class="left_tag">上传图片资源：</div>
+        <input style="margin-top:10px" name="userfile" type="file" />
+    </div>
+    <div class="box_in">
+		<div class="left_tag">需上传到的目录名(如wcx)：</div>
+        <input class="right_input" type=text size=20 name=path value="<?php echo $_POST["path"] ?>" /><br>
+    </div>
+    	<input class="button" style="margin-left:20px; margin-top:10px" type="submit" name="fileupload" value="上传" />
 	</form>
-	<hr><br>
-	<form action="deal_add.php" method=POST>
-	<table>
-	<tr><td align=right>老师名:</td><td><input type=text size=20 name=teacher_name /> </td></tr>
-	<tr><td align=right>网站url目录名(如wcx):</td><td><input type=text size=20 name=path value="<?php echo $_POST["path"] ?>" /></td></tr>
-	<tr><td align=right>捐赠链接:</td><td><input type=text size=100 name=shopurl value="http://wd.koudai.com/?userid=208388189" /> </td></tr>
-	<tr><td align=right>图片链接:</td><td><input type=text size=100 name=piclink value="<?php echo $defaultpic ?>" /> </td></tr>
-	<tr><td align=right>执教地点:</td><td><input type=text size=100 name=position /> </td></tr>
-	<tr><td align=right>事迹摘要:</td><td><input type=text size=100 name=summary /> </td></tr>
-	<tr><td align=right>事迹链接:</td><td><input type=text size=100 name=link /> </td></tr>
-	<tr><td align=right>或文字描述:</td><td><textarea cols=100 rows=20 name=content></textarea> </td></tr>
-	<tr><td align=right><input type=checkbox checked name="usehtml" /></td><td>文中使用了html标签(请自行保证语法正确性)</td></tr>
-	<tr><td align=right>
-	<input type=submit name=addteacher />
-	</td><td></td></tr>
-	</table>
+	<form class="box_out" action="deal_add.php" method=POST>
+	<div class="box_in">
+    	<div class="left_tag">老师名:</div>
+        <input class="right_input" type=text size=20 name=teacher_name />
+    </div>
+	<div class="box_in">
+    	<div class="left_tag">网站url目录名(如wcx):</div>
+        <input class="right_input" type=text size=20 name=path value="<?php echo $_POST["path"] ?>" />
+    </div>
+	<div class="box_in">
+    	<div class="left_tag">捐赠链接:</div>
+        <input class="right_input" type=text size=100 name=shopurl value="http://wd.koudai.com/?userid=208388189" />
+    </div>
+	<div class="box_in">
+    	<div class="left_tag">图片链接:</div>
+        <input class="right_input" type=text size=100 name=piclink value="<?php echo $defaultpic ?>" />
+    </div>
+	<div class="box_in">
+    	<div class="left_tag">执教地点:</div>
+        <input class="right_input" type=text size=100 name=position />
+    </div>
+	<div class="box_in">
+    	<div class="left_tag">事迹摘要:</div>
+        <input class="right_input" type=text size=100 name=summary />
+    </div>
+	<div class="box_in">
+    	<div class="left_tag">事迹链接:</div>
+        <input class="right_input" type=text size=100 name=link />
+    </div>
+	<div class="box_without_height">
+    	<div class="left_tag">或文字描述:</div>
+        <textarea class="box_content" cols=100 rows=20 name=content></textarea>
+    </div>
+    <div class="box_in">
+        <input style="float:left; margin-top:10px; margin-left:20px" type=checkbox checked name="usehtml" />
+        <div class="text_small" style="float:left; margin-top:12px">文中使用了html标签(请自行保证语法正确性)</div>
+    </div>
+		<input class="button" style="margin-left:20px" type=submit name=addteacher />
+    </form>
 	</body>
 	</html>
 <?php

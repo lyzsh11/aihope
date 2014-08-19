@@ -72,7 +72,7 @@
 	margin-top: 6px;
 }
 
-a.tag:link {
+a.tag {
 	width: 60px;
 	height: 30px;
 	float: left;
@@ -83,6 +83,7 @@ a.tag:link {
 	margin-top: 5px;
 	margin-right: 5px;
 	background: url(../image/tag.png);
+	background-repeat:no-repeat;
 }
 
 a.tag:hover {
@@ -97,4 +98,5 @@ a.tag:hover {
 	margin-right: 5px;
 	text-decoration:none;
 	background: url(../image/tag_press.png);
+	background-repeat:no-repeat;
 }

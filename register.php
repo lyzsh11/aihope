@@ -1,4 +1,7 @@
 <html>
+<head>
+	
+</head>
 <body>
 <form action="deal_reg.php" method=POST>
 <table>
