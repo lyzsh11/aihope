@@ -32,7 +32,7 @@ if(!isset($_COOKIE['userid'])) {
     	<link href="css/css_table.css" rel="stylesheet" type="text/css"/>
     </head>
 	<body style="margin:0 0">
-    <iframe src="header.html" scrolling="no" height="150px" width="100%" frameborder="0"></iframe>
+    <iframe src="header.php" scrolling="no" height="150px" width="100%" frameborder="0"></iframe>
 	<form class="box_out" action="" method=POST>
 	<div class="box_in">
     	<div class="left_tag">文章标题：</div>

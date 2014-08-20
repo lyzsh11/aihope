@@ -1,7 +1,7 @@
 <?php
 $path="../";
 
-$errormsg="<br><a href=\"register.php\">点此或返回重新注册</a>";
+$errormsg="<br><a href=\"register_login.php?t=1\">点此或返回重新注册</a>";
 $minpasslen=6;
 if (strlen($_POST["passwd"]) < $minpasslen) {
 	echo "对不起，密码过短，注册失败<br>请至少设置 $minpasslen 个字符。<br>\n";
@@ -28,11 +28,11 @@ $sql="insert into user (id, passwd, name, create_time, last_login, permission) v
 	//permission: 1--可读; 2--可推荐老师; 4--可添加微信内容 ...
 $dbres = mysql_query($sql, $db_con);
 if (!$dbres) {
-	echo "创建用户失败，请换一个用户名";//.mysql_error();
+	echo "$sql 创建用户失败，请换一个用户名".mysql_error();
 	echo $errormsg;
 	die;
 }
-setcookie("user",$_POST["id"], 3600*72);
+setcookie("userid",$_POST["id"], time()+3600*72);
 echo "创建用户成功，已登录!";
 //可跳转到个人中心  
 require("jump.php");

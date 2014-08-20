@@ -1,7 +1,7 @@
 <?php
 $path="../";
 
-$errormsg="<br><a href=\"login.php\">点此或返回重新登录</a>";
+$errormsg="<br><a href=\"register_login.php?t=2\">点此或返回重新登录</a>";
 $id=$_POST["id"];
 $pass=md5($id.$_POST["passwd"]);
 

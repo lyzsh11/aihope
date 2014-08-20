@@ -10,7 +10,7 @@
 </head>
 
 <body style="margin:0 0">
-<iframe src="header.html" scrolling="no" height="120px" width="100%" frameborder="0"></iframe>
+<iframe src="header.php" scrolling="no" height="120px" width="100%" frameborder="0"></iframe>
 <div class="box_in">
 	<div class="text_small" style="margin-left:10px">> 可捐助列表</div>
     <!--form class="box_select" action="#" method="get">
