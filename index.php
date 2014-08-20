@@ -66,7 +66,7 @@
     	<div class="right">
     		<div class="text_head_wx">爱心帮微信消息</div>
 			<img src="image/bar.png"/>
-			<iframe src="wx.php" scrolling="auto" height="100%" width="100%" frameborder="0"></iframe>
+			<iframe src="wx.php" scrolling="auto" height="350px" width="100%" frameborder="0"></iframe>
     	</div>
     	<div class="middle_bottom">
         	<div class="text_head">那些身边的人和事</div>
