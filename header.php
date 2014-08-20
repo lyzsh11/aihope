@@ -23,12 +23,12 @@
 <div class="box_out">
 	<div class="box_in">
         <div class="box_nav_interval"><img src="image/nav_interval.png"/></div>
-        <a href="index.php" target="_blank"><div class="box_nav_in">首&nbsp;&nbsp;页</div></a>
+        <a href="index.php" target="_parent"><div class="box_nav_in">首&nbsp;&nbsp;页</div></a>
         <div class="box_nav_interval"><img src="image/nav_interval.png"/></div>
-        <a href="add_teacher.php" target="_blank"><div class="box_nav_in">我&nbsp;要&nbsp;推&nbsp;荐</div></a>
-        <a href="give_list.php" target="_blank"><div class="box_nav_in">我&nbsp;要&nbsp;奖&nbsp;赠</div></a>
+        <a href="add_teacher.php" target="_parent"><div class="box_nav_in">我&nbsp;要&nbsp;推&nbsp;荐</div></a>
+        <a href="give_list.php" target="_parent"><div class="box_nav_in">我&nbsp;要&nbsp;奖&nbsp;赠</div></a>
         <div class="box_nav_interval"><img src="image/nav_interval.png"/></div>
-        <a href="about.php" target="_blank"><div class="box_nav_in">关&nbsp;于&nbsp;我&nbsp;们</div></a>
+        <a href="about.php" target="_parent"k"><div class="box_nav_in">关&nbsp;于&nbsp;我&nbsp;们</div></a>
         <div class="box_nav_interval"><img src="image/nav_interval.png"/></div>
     </div>
 </div>

@@ -20,53 +20,12 @@
 	</div>
     <div class="middle_right">
     	<div class="middle">
-    		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  			<!-- Indicators -->
-  			<ol class="carousel-indicators">
-    			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  			</ol>
-
-  			<!-- Wrapper for slides -->
-  			<div class="carousel-inner" role="listbox">
-			<?php
-				require_once ($path."db.php") ; 
-				$db_con = @mysql_connect($dbhost, $dbuser, $dbpasswd) or $my_err = true;
-				@mysql_select_db($dbname);
-				//$sql="insert into teacher (name,create_time) values (\"测试3\",NOW())";
-				$sql="select * from teacher where recommender='admin'";
-				$dbres = mysql_query($sql, $db_con);
-				$active=" active";
-				while($teacher = (mysql_fetch_array($dbres))) {
-					echo "<div class=\"item".$active."\">\n";
-					echo '<a href="'.$teacher['url'].'"><img src="'.$teacher['pic'].'" alt="'.$teacher['name'].'" /></a>';
-					//echo '<a href="'.$teacher['url'].'"><img height=500 src="'.$path.'/pic/'.$teacher['pic'].'" alt="'.$teacher['name'].'"/></a>';
-					echo "<div class=\"carousel-caption\"></div>\n";
-					echo "</div>\n";
-					$active="";
-				}
-
-				mysql_close($db_con);
-			?>
-			</div>
-
-  			<!-- Controls -->
-  			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    			<span class="glyphicon glyphicon-chevron-left"></span>
-    			<span class="sr-only">Previous</span>
-  			</a>
-  			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    			<span class="glyphicon glyphicon-chevron-right"></span>
-    			<span class="sr-only">Next</span>
-  			</a>
-			</div>
-        
+    		<iframe src="image.php" scrolling="no" height="500px" width="100%" frameborder="0" scrolling="no"></iframe>
     	</div>
     	<div class="right">
-    		<div class="text_head">爱心帮微信消息</div>
+    		<div class="text_head_wx">爱心帮微信消息</div>
 			<img src="image/bar.png"/>
-			<iframe src="wx.php" scrolling="auto" height="100%" width="100%" frameborder="0"></iframe>
+			<iframe src="wx.php" scrolling="auto" height="350px width="100%" frameborder="0"></iframe>
     	</div>
     	<div class="middle_bottom">
         	<div class="text_head">那些身边的人和事</div>

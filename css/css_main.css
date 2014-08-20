@@ -72,6 +72,20 @@
 	margin-top: 6px;
 }
 
+.text_head_wx {
+	color: #31452D;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.text_content_wx {
+	sfont-size: 13px;
+	color: #567260;
+	margin-top: 6px;
+}
+
 a.tag {
 	width: 60px;
 	height: 30px;
