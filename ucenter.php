@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<iframe src="header.html" scrolling="no" height="130px" width="100%" frameborder="0"></iframe>
+<iframe src="header.php" scrolling="no" height="130px" width="100%" frameborder="0"></iframe>
 <div class="box_in">
 	<div class="box_user_info">
     	<div class="user_info">

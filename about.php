@@ -7,10 +7,10 @@
 </head>
 
 <body style="margin:0 0">
-<iframe src="header.html" scrolling="no" height="130px" width="100%" frameborder="0"></iframe>
+<iframe src="header.php" scrolling="no" height="130px" width="100%" frameborder="0"></iframe>
 <div class="box_in">
 	<div class="left">
-		<iframe src="left.html" scrolling="no" height="600px" width="100%" frameborder="0"></iframe>
+		<iframe src="left.php" scrolling="no" height="600px" width="100%" frameborder="0"></iframe>
 	</div>
     <div class="right">
     	<div class="text_head">关于我们</div>
