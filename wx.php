@@ -23,7 +23,7 @@ $path="../";
 	}
 	$dbres = mysql_query($sql, $db_con);
 	while($article = (mysql_fetch_array($dbres))) {
-		echo '<a target="_blank" href="'.$article["link"].'"><div class="text_content_wxs">'.$article["title"].'</div></a>';
+		echo '<a target="_blank" href="'.$article["link"].'"><div class="text_content_wx">'.$article["title"].'</div></a>';
 	}
 ?>
 </body>
