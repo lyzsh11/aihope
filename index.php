@@ -20,7 +20,7 @@
 	</div>
     <div class="middle_right">
     	<div class="middle">
-    		<iframe src="image.php" scrolling="no" height="500px" width="100%" frameborder="0" scrolling="no"></iframe>
+    		<iframe src="image.php" scrolling="no" height="500px" width="500px" frameborder="0" scrolling="no"></iframe>
     	</div>
     	<div class="right">
     		<div class="text_head_wx">爱心帮微信消息</div>
