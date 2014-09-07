@@ -83,7 +83,8 @@
 .text_content_wx {
 	font-size: 12px;
 	color: #567260;
-	margin-top: 6px;
+	margin-top: 8px;
+	text-decoration: none;
 }
 
 a.tag {
