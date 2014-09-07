@@ -1,0 +1,65 @@
+/* CSS Document */
+.box_out {
+	width: 1036px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 6px;
+	padding-right: 6px;
+	background: url(../image/background.png) repeat-y;
+}
+.logo_bar {
+	height: 60px;
+}
+.logo {
+	float: left;
+}
+.text_login {
+	float: right;
+	margin-right: 30px;
+	margin-top: 18px;
+	color: #492607;
+	font-size: 20px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+}
+a:link{
+	color: #492607;
+	font-size: 20px;
+	text-decoration: none;
+}
+.border_1 {
+	height: 3px;
+	background: #22ac38;
+}
+.border_2 {
+	height: 2px;
+	background: #004a1b;
+}
+.border_3 {
+	height: 5px;
+	background: #fff799;
+}
+.group_image {
+	height: 400px;
+	width: 1024px;
+	overflow: hidden;
+}
+.nav_bar {
+	height: 72px;
+	overflow: hidden;
+	background:url(../image/nav_bar.png);
+	padding-left: 50px;
+}
+.nav_item {
+	height: 54px;
+	font-size: 26px;
+	color: #220f00;
+	margin-top: 18px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	float: left;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+.nav_item:hover {
+	background:url(../image/nav_select.png) bottom no-repeat;
+}
