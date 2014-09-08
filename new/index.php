@@ -11,7 +11,8 @@
 <body style="background-color:#dddddd; margin:0 0">
 <div class="box_out">
 	<iframe src="header.php" height="542px" width="100%" scrolling="no" frameborder="0"></iframe>
-    <div class="left">
+    <div class="content_in">
+    	<div class="left">
     	<div class="title_bar">
         	<div class="title_text">那些身边的人</div>
             <div class="more">更多...</div>
@@ -60,6 +61,10 @@
                 	提交人
                 </div>
             </div>
+        </div>
+    	</div>
+        <div class="right">
+    		<iframe src="wx.php" height="500px" width="455px" scrolling="no" frameborder="0"></iframe>
         </div>
     </div>
 </div>
