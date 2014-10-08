@@ -1,0 +1,68 @@
+/* CSS Document */
+.weixix_box_out {
+	border: #fff679 thin solid;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.weixin_title_bar {
+	background: url(../image/weixin_bar.png) bottom no-repeat;
+	width: 435px;
+	height: 53px;
+}
+
+.weixin_titie_text {
+	font: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 22px;
+	color: #ed7000;
+	float: left;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.weixin_erweima {
+	float: right;
+	margin-top: 20px;
+	margin-right: 22px;
+}
+
+.weixin_select_box {
+	width: inherit;
+	height: 58px;
+	overflow: hidden;
+}
+
+.weixin_select_in {
+	height: 58px;
+	width: 118px;
+	float: left;
+	background:url(../image/weixin_select.png) no-repeat;
+	color: #ffffff;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	letter-spacing: 2px;
+}
+
+.weixin_content_box {
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 5px;
+	float: none;
+	width: inherit;
+}
+
+.weixin_content_in {
+	color: #364a01;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 18px;
+	height: 35px;
+	font-weight: bold;
+}
