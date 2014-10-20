@@ -1,4 +1,41 @@
 <?php
+//print_r($_COOKIE);
+if(!isset($_COOKIE['userid'])) {
+	require("loginform.php");
+} else {
+	//TODO: 检查用户的权限  
+
+	$defaultpic = "http://www.aihope.org/web/wcx/teaching1.jpg";
+	if(isset($_POST["fileupload"])) {
+	    //print_r($_FILES);
+	    $uploaddir = '/usr/share/nginx/html/v1/'.$_POST["path"];
+	    $error = 0;
+	    mkdir($uploaddir);
+	    $filename = basename($_FILES['userfile']['name']);
+	    $uploadfile = "$uploaddir/$filename";
+
+	    //echo '<pre>';
+	    date_default_timezone_set('Asia/Chongqing');
+	    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+		$defaultpic = "http://www.aihope.org/web/".$_POST["path"]."/".$filename;
+		echo "上传成功，可在 <a href=\"$defaultpic\">这里</a>访问<br>\n";
+	    } else {
+		print_r(error_get_last());
+		echo $_FILES['userfile']['tmp_name']."=>$uploadfile 文件上传失败\n";
+		$error = 1;
+	    }
+
+	    echo '<!--Here is some more debugging info:';
+	    print_r($_FILES);
+	    echo '-->';
+ 
+	}
+?>
+
+<?php
+}
+?>
+<?php
 $path="../";
 //print_r($_COOKIE);
 if(!isset($_COOKIE['userid'])) {
@@ -27,13 +64,19 @@ if(!isset($_COOKIE['userid'])) {
 		mysql_close($db_con);
 	}
 ?>
-	<html>
-    <head>
-    	<link href="css/css_table.css" rel="stylesheet" type="text/css"/>
-    </head>
-	<body style="margin:0 0">
-    <iframe src="header.php" scrolling="no" height="150px" width="100%" frameborder="0"></iframe>
-	<form class="box_out" action="" method=POST>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/addArticle.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body style="background: #dddddd; margin:0 0">
+<div class="box_out">
+	<iframe src="header.php" height="167px" width="100%" scrolling="no" frameborder="0"></iframe>
+    <div class="title">> 微信文章上传</div>
+    <form class="box_add_article" action="" method=POST>
 	<div class="box_in">
     	<div class="left_tag">文章标题：</div>
         <input class="right_input" type=text size=20 name=title />
@@ -41,7 +84,7 @@ if(!isset($_COOKIE['userid'])) {
 	<!--tr><td align=right>文章英文网址:</td><td><input type=text size=20 name=path value="article1"/></td></tr-->
 	<div class="box_in">
     	<div class="left_tag">文章分类:</div>
-        <select name=articletype>
+        <select style="margin-top:10px" name=articletype>
 			<option name=articletype value=1>教育</option>
 			<option name=articletype value=2>社会</option>
 		</select>
@@ -54,10 +97,9 @@ if(!isset($_COOKIE['userid'])) {
     	<div class="left_tag">微信链接：</div>
         <input class="right_input" type=text size=100 name=link />
     </div>
-	<input class="button" style="margin-left:20px" type=submit name=addarticle />
+	<input class="button" type=submit name=addarticle />
 	</form>
-	</body>
-	</html>
-<?php
-}
-?>
+</div>
+<iframe src="footer.php" height="160px" width="100%" scrolling="no" frameborder="0"></iframe>
+</body>
+</html>
