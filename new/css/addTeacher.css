@@ -1,0 +1,97 @@
+/* CSS Document */
+.box_out {
+	width: 1036px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../image/background.png) repeat-y;
+}
+
+.title {
+	height:40px;
+	width: 558px;
+	overflow:hidden;
+	margin-left:40px;
+	margin-right:20px;
+	margin-top: 20px;
+	background: url(../image/radio_border.png) bottom no-repeat;
+	font-weight: bold;
+	font-size: 24px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+.box_upload_image {
+	margin-left:40px;
+	margin-top: 20px;
+}
+
+.box_upload_all {
+	margin-left:40px;
+	margin-top:30px;
+	padding-top:20px;
+	padding-bottom:30px;
+	border-top:#B9D7D1 thin dotted;
+	width:700px;
+}
+
+.box_in {
+	height:40px;
+	width:700px;
+	overflow:hidden;
+}
+
+.left_tag {
+	color: #3B514E;
+	height: 40px;
+	width: 300px;
+	align-content: center;
+	float: left;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.right_input {
+	height: 30px;
+	width: 350px;
+	margin-top: 5px;
+	border: thin solid #C0CDC0;
+	border-radius: 2px;
+	color: #5C5C5C;
+	padding-left: 10px;
+}
+
+.button {
+	width: 80px;
+	height: 30px;
+	padding-bottom: 4px;
+	align-content: center;
+	background-color: #FFFFFF;
+	border: thin solid #A6B5B3;
+	border-radius: 3px;
+	color: #2F5147;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.button:hover {
+	background-color: #E4F0E5;
+}
+
+.box_content {
+	width: 350px;
+	margin-top: 5px;
+	border: thin solid #C0CDC0;
+	border-radius: 2px;
+	color: #5C5C5C;
+	padding-left: 10px;
+	overflow:hidden;
+}
+
+.box_without_height {
+	width:700px;
+	overflow:hidden;
+}
+
+.text_small {
+	color: #939393;
+	font-size: 13px;
+}

@@ -8,24 +8,32 @@
 	background: url(../image/background.png) repeat-y;
 }
 .logo_bar {
-	height: 60px;
+	height: 90px;
 }
 .logo {
 	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	display: block;
 }
 .text_login {
 	float: right;
 	margin-right: 30px;
-	margin-top: 18px;
+	margin-top: 28px;
 	color: #492607;
-	font-size: 20px;
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
-}
-a:link{
-	color: #492607;
-	font-size: 20px;
+	font-size: 14px;
 	text-decoration: none;
 }
+.text_login a{
+	color: #492607;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.text_login a:hover{
+	text-decoration:underline;
+}
+
 .border_1 {
 	height: 3px;
 	background: #22ac38;

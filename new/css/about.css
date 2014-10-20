@@ -1,0 +1,50 @@
+/* CSS Document */
+.box_out {
+	width: 1036px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../image/background.png) repeat-y;
+}
+
+.title {
+	height:40px;
+	width: 558px;
+	overflow:hidden;
+	margin-left:40px;
+	margin-right:20px;
+	margin-top:10px;
+	padding-top:20px;
+	background: url(../image/radio_border.png) bottom no-repeat;
+	font-weight: bold;
+	font-size: 24px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+.content {
+	width: 956px;
+	margin-left: 40px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 19px;
+	color: #220f00;
+	letter-spacing: 2px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.content a {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 19px;
+	color: #220f00;
+	letter-spacing: 2px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+
+.content a:hover {
+	color:#FF8600;
+}
+
+

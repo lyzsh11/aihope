@@ -1,0 +1,76 @@
+/* CSS Document */
+.box_out {
+	width: 1036px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../image/background.png) repeat-y;
+}
+
+.box_radio {
+	height:55px;
+	width:560px;
+	overflow:hidden;
+	margin-left:40px;
+	margin-right:20px;
+	margin-top: 20px;
+	background: url(../image/radio_border.png) bottom no-repeat;
+}
+
+.radio_text {
+	color: #3B514E;
+	height: 30px;
+	width: 180px;
+	align-content: center;
+	margin-left: 20px;
+	float:left;
+	font-weight: bold;
+	padding-top: 6px;
+	font-size: 24px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+.box_in {
+	height:40px;
+	width:600px;
+	overflow:hidden;
+	margin-left: 20px;
+}
+
+.left_tag {
+	color: #3B514E;
+	height: 40px;
+	width: 200px;
+	align-content: center;
+	margin-left: 20px;
+	float: left;
+	font-weight: bold;
+	padding-top: 10px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+.right_input {
+	height: 30px;
+	width: 350px;
+	margin-top: 5px;
+	border: thin solid #C0CDC0;
+	border-radius: 2px;
+	color: #5C5C5C;
+	padding-left: 10px;
+}
+
+.button {
+	width: 80px;
+	height: 30px;
+	padding-bottom: 4px;
+	align-content: center;
+	background-color: #FFFFFF;
+	border: thin solid #A6B5B3;
+	border-radius: 3px;
+	color: #2F5147;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.button:hover {
+	background-color: #E4F0E5;
+}

@@ -42,6 +42,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	overflow: hidden;
+	margin-bottom: 30px;
 }
 
 .list_title_bar {
@@ -52,12 +53,20 @@
 
 .list_title {
 	float: left;
+	margin-top: 12px;
+	margin-left: 16px;
+}
+
+.list_title a {
 	color: #331800;
 	font-size: 22px;
 	font-weight: 600;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	margin-top: 12px;
-	margin-left: 16px;
+	text-decoration:none;
+}
+
+.list_title a:hover {
+	text-decoration:underline;
 }
 
 .list_button {
@@ -76,6 +85,10 @@
 	letter-spacing: 1px;
 	overflow: hidden;
 	letter-spacing: 1px;
+}
+
+.list_button:hover {
+	background:url(../image/list_button_background_1.png) no-repeat;
 }
 
 .list_content {
@@ -97,11 +110,19 @@
 	margin-left: 20px;
 	width: 755px;
 	height: 120px;
+	overflow: hidden;
+}
+
+.list_content_text a {
 	color: #331800;
 	font-size: 16px;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-weight: 12px;
 	letter-spacing: 3px;
 	line-height: 24px;
-	overflow: hidden;
+	text-decoration:none;
+}
+
+.list_content_text a:hover {
+	text-decoration:underline;
 }

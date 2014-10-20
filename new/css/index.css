@@ -1,4 +1,4 @@
-/* CSS Document */
+﻿/* CSS Document */
 .box_out {
 	width: 1036px;
 	margin-left: auto;
@@ -13,6 +13,7 @@
 
 .left {
 	width: 460px;
+	height: 500px;
 	margin-left: 30px;
 	margin-top: 50px;
 	float: left;
@@ -34,11 +35,14 @@
 }
 
 .more {
+	float: right;
+	margin-top: 5px;
+}
+
+.more a{
 	color: #2f2e2e;
 	font-size: 20px;
-	float: right;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	margin-top: 5px;
 	letter-spacing: 2px;
 	font-weight: 600;
 }
@@ -51,12 +55,14 @@
 .content_list_detail {
 	height: 150px;
 	padding-right: 5px;
+	overflow:hidden;
 }
 
 .content_image {
 	width: 150px;
 	height: 120px;
 	float: left;
+	overflow: hidden;
 }
 
 .content_detail {
@@ -67,6 +73,10 @@
 
 .content_detail_title {
 	height: 35px;
+	overflow: hidden;
+}
+
+.content_detail_title a {
 	color: #525252;
 	font-size: 20px;
 	font-weight: 800;
@@ -75,29 +85,42 @@
 
 .content_detail_in {
 	width: 275px;
+	height: 82px;
+}
+
+.content_detail_in a {
 	color: #373736;
 	font: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	font-size: 15px;
+	font-size: 14px;
 	letter-spacing: 1px;
+	line-height: 200%;
 }
 
 .content_list {
 	height: 35px;
 	padding-right: 10px;
 	padding-left: 6px;
+	overflow: hidden;
 }
 
 .content_list_title {
-	color: #525252;
 	float: left;
+	overflow: hidden;
+}
+
+.content_list_title a {
+	color: #525252;
 	font-size: 20px;
 	font-weight: 800;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
 
 .content_list_commit {
-	color: #525252;
 	float: right;
+}
+
+.content_list_commit a {
+	color: #525252;
 	font-size: 20px;
 	font-weight: 800;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
