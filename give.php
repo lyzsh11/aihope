@@ -7,9 +7,10 @@
 <meta charset="utf-8">
 <title>可捐赠列表</title>
 <link href="css/give.css" rel="stylesheet" type="text/css"/>
+<script src="js/ellipsis.js"></script>
 </head>
 
-<body style="background-color:#dddddd; margin:0 0">
+<body style="background-color:#dddddd; margin:0 0"  onload="ellipsis('list_content_text', 'a')">
 <div class="box_out">
 	<iframe src="header.php" height="167px" width="100%" scrolling="no" frameborder="0"></iframe>
     <div class="box_in">

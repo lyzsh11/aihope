@@ -8,10 +8,11 @@
 <title>爱心帮首页</title>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/index.css" rel="stylesheet" type="text/css"/>
+<script src="js/ellipsis.js"></script>
 
 </head>
 
-<body style="background-color:#dddddd; margin:0 0">
+<body style="background-color:#dddddd; margin:0 0" onload="ellipsis('content_detail_in', 'a')">
 <div class="box_out">
 	<iframe src="header.php" height="167px" width="100%" scrolling="no" frameborder="0"></iframe>
     <div class="content_in">
