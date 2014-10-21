@@ -73,7 +73,7 @@ if (isset($_POST["loginsubmit"])) {
 <html>
 <head>
 <meta charset="utf-8">
-<title>注册/d登录</title>
+<title>注册/登录</title>
 <link href="css/loginRegister.css" rel="stylesheet" type="text/css"/>
 <?php
 	if(isset($_GET["t"]) && $_GET["t"]=="2") {

@@ -23,3 +23,19 @@
 	overflow: hidden;
 }
 
+.text_footer {
+	text-align: center;
+	font-size: 12px;
+	line-height: 180%;
+	margin-top: 20px;
+	color: #515151;
+}
+
+.text_footer a {
+	color: #515151;
+	text-decoration: none;
+}
+
+.text_footer a:hover {
+	text-decoration: underline;
+}
