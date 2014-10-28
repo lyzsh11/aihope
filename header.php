@@ -17,9 +17,9 @@
 <?php if(isset($_COOKIE['userid'])) {
 	echo $_COOKIE['userid'];
 ?>
-		，你好！  (点此可以<a class="text_link" href="logout.php" target="_parent">登出</a>)</div>
+		，你好！  (点此可以<a class="text_link" href="logout.php" target="_parent">登出</a>)
 <?php } else { ?>
-    	点此可以 <a target="_parent" href="loginRegister.php">注册</a>&nbsp;/&nbsp;<a target="_parent" href="loginRegister.php?t=2">登录</a>
+    	点此可以 <a target="_parent" href="loginRegister.php?t=1">注册</a>&nbsp;/&nbsp;<a target="_parent" href="loginRegister.php?t=2">登录</a>
 <?php } ?>
 	</div>
     </div>

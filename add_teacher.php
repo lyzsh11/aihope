@@ -2,7 +2,7 @@
 //print_r($_COOKIE);
 if(!isset($_COOKIE['userid'])) {
     $jumpdest = "add_teacher.php";
-    require("register_login.php");
+    require("loginRegister.php");
 } else {
     //TODO: 检查用户的权限  
 

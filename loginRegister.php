@@ -76,7 +76,7 @@ if (isset($_POST["loginsubmit"])) {
 <title>注册/登录</title>
 <link href="css/loginRegister.css" rel="stylesheet" type="text/css"/>
 <?php
-	if(isset($_GET["t"]) && $_GET["t"]=="2") {
+	if(!isset($_GET["t"]) || $_GET["t"]=="2") {
 		//?t=2 表示登录  
 		$reg="none";
 		$login="block";
