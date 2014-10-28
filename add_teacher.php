@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>推荐老师</title>
 <link href="css/addTeacher.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -16,18 +16,18 @@
         <input style="margin-top:10px" name="userfile" type="file" />
     </div>
     <div class="box_in">
-		<div class="left_tag">需上传到的目录名(如wcx)：</div>
+		<div class="left_tag">老师ID(拼音即可,如WangChengXia)：</div>
         <input class="right_input" type=text size=20 name=path value="<?php echo $_POST["path"] ?>" /><br>
     </div>
     <input class="button" style="margin-top:10px" type="submit" name="fileupload" value="上传" />
 	</form>
     <form class="box_upload_all" action="deal_add.php" method=POST>
 	<div class="box_in">
-    	<div class="left_tag">老师名:</div>
+    	<div class="left_tag">老师姓名:</div>
         <input class="right_input" type=text size=20 name=teacher_name />
     </div>
 	<div class="box_in">
-    	<div class="left_tag">网站url目录名(如wcx):</div>
+    	<div class="left_tag">老师ID<small>(拼音即可,如WangChengXia):</small></div>
         <input class="right_input" type=text size=20 name=path value="<?php echo $_POST["path"] ?>" />
     </div>
 	<div class="box_in">
@@ -38,7 +38,15 @@
     	<div class="left_tag">图片链接:</div>
         <input class="right_input" type=text size=100 name=piclink value="<?php echo $defaultpic ?>" />
     </div>
-	<div class="box_in">
+    <div class="box_in">
+    	<div class="left_tag">银行账号:</div>
+        <input class="right_input" type=text size=100 name=bankacc />
+    </div>
+    <div class="box_in">
+    	<div class="left_tag">开户银行名称:</div>
+        <input class="right_input" type=text size=100 name=bankname />
+    </div>
+    <div class="box_in">
     	<div class="left_tag">执教地点:</div>
         <input class="right_input" type=text size=100 name=position />
     </div>
