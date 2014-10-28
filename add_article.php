@@ -1,41 +1,4 @@
-<?php
-//print_r($_COOKIE);
-if(!isset($_COOKIE['userid'])) {
-	require("loginform.php");
-} else {
-	//TODO: 检查用户的权限  
-
-	$defaultpic = "http://www.aihope.org/web/wcx/teaching1.jpg";
-	if(isset($_POST["fileupload"])) {
-	    //print_r($_FILES);
-	    $uploaddir = '/usr/share/nginx/html/v1/'.$_POST["path"];
-	    $error = 0;
-	    mkdir($uploaddir);
-	    $filename = basename($_FILES['userfile']['name']);
-	    $uploadfile = "$uploaddir/$filename";
-
-	    //echo '<pre>';
-	    date_default_timezone_set('Asia/Chongqing');
-	    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-		$defaultpic = "http://www.aihope.org/web/".$_POST["path"]."/".$filename;
-		echo "上传成功，可在 <a href=\"$defaultpic\">这里</a>访问<br>\n";
-	    } else {
-		print_r(error_get_last());
-		echo $_FILES['userfile']['tmp_name']."=>$uploadfile 文件上传失败\n";
-		$error = 1;
-	    }
-
-	    echo '<!--Here is some more debugging info:';
-	    print_r($_FILES);
-	    echo '-->';
- 
-	}
-?>
-
-<?php
-}
-?>
-<?php
+﻿<?php
 $path="../";
 //print_r($_COOKIE);
 if(!isset($_COOKIE['userid'])) {
@@ -103,3 +66,6 @@ if(!isset($_COOKIE['userid'])) {
 <iframe src="footer.php" height="160px" width="100%" scrolling="no" frameborder="0"></iframe>
 </body>
 </html>
+<?php
+}
+?>
