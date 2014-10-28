@@ -77,11 +77,13 @@ if (isset($_POST["loginsubmit"])) {
 <link href="css/loginRegister.css" rel="stylesheet" type="text/css"/>
 <?php
 	if(isset($_GET["t"]) && $_GET["t"]=="2") {
+		//?t=2 表示登录  
 		$reg="none";
 		$login="block";
 		$regradio="";
 		$loginradio="checked";
 	} else {
+		//url中没有t参数或t不是2表示新注册  
 		$reg="block";
 		$login="none";
 		$regradio="checked";
