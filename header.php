@@ -13,7 +13,15 @@
 <div class="box_out">
 	<div class="logo_bar">
     	<img src="image/logo.png" class="logo"/>
-    	<div class="text_login">点此可以 <a href="#">注册</a>&nbsp;/&nbsp;<a href="#">登录</a></div>
+	<div class="text_login">
+<?php if(isset($_COOKIE['userid'])) {
+	echo $_COOKIE['userid'];
+?>
+		，你好！  (点此可以<a class="text_link" href="logout.php" target="_parent">登出</a>)</div>
+<?php } else { ?>
+    	点此可以 <a target="_parent" href="loginRegister.php">注册</a>&nbsp;/&nbsp;<a target="_parent" href="loginRegister.php?t=2">登录</a>
+<?php } ?>
+	</div>
     </div>
     <div class="border_1"></div>
     <div class="border_2"></div>
