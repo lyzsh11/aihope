@@ -2,6 +2,7 @@
 $path="../";
 //print_r($_COOKIE);
 if(!isset($_COOKIE['userid'])) {
+	$jumpdest = "add_article.php";
 	require("loginform.php");
 } else {
 	//TODO: 检查用户的权限  
