@@ -69,6 +69,7 @@
     <div class="right">
         <iframe src="wx.php" height="500px" width="460px" scrolling="no" frameborder="0"></iframe>
     </div>
+    </div>
 </div>
 <iframe src="footer.php" height="160px" width="100%" scrolling="no" frameborder="0"></iframe>
 </body>
