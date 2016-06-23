@@ -56,7 +56,7 @@
     <div class="border_3"></div>-->
     <div class="nav_bar">
     	<a href="index.php" target="_parent"><div class="nav_item">首页</div></a>
-        <a href="give.php" target="_parent"><div class="nav_item">奖赠列表</div></a>
+        <a href="reward_list.php" target="_parent"><div class="nav_item">奖赠列表</div></a>
         <a href="add_teacher.php" target="_parent"><div class="nav_item">我要推荐</div></a>
         <a href="about.php" target="_parent"><div class="nav_item">关于我们</div></a>
     </div>

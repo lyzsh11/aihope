@@ -19,7 +19,7 @@
     	<div class="left">
     	<div class="title_bar">
         	<div class="title_text">那些身边的人</div>
-            <div class="more"><a href="give.php">更多...</a></div>
+            <div class="more"><a href="reward_list.php">更多...</a></div>
         </div>
         <div class="left_content">
             <?php
